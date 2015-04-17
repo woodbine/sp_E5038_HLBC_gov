@@ -29,7 +29,7 @@ for link in links:
 	url = link['href']
 	if '.csv' in url:
 		stem = url.split('/')[-1]
-		fileUrl = 'http://www.haringey.gov.uk/sites/haringeygovuk/files/'+url
+		fileUrl = 'http://www.haringey.gov.uk/sites/haringeygovuk/files/'+stem
 		title = link.contents[0]
 		# create the right strings for the new filename
 		csvYr = title.split(' ')[1]
